@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -15,7 +16,7 @@ app.add_middleware(
 )
 
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
-API_KEY = "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"
+API_KEY = os.getenv("GROQ_API_KEY")
 MODEL = "llama-3.3-70b-versatile"
 
 HEADERS = {
