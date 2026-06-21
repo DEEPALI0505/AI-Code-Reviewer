@@ -77,7 +77,7 @@ export default function App() {
     if (!code.trim()) { setError("Please paste some code first."); return; }
     setError(""); setLoading(true); setResult(null);
     try {
-      const res = await fetch("http://localhost:8000/api/review", {
+      const res = await fetch("https://ai-code-reviewer-api-3e5b.onrender.com/api/review", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ code, language: language.toLowerCase(), focus }),
