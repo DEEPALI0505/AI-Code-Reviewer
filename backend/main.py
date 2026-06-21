@@ -8,14 +8,14 @@ app = FastAPI(title="AI Code Reviewer API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173"],
+    allow_origins=["http://localhost:3000", "http://localhost:5173", "https://ai-code-reviewer-pi-pied.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
-API_KEY = "your_groq_api_key_here"
+API_KEY = "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"
 MODEL = "llama-3.3-70b-versatile"
 
 HEADERS = {
