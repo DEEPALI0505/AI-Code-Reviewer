@@ -1,4 +1,4 @@
-# AI Code Reviewer 🔍
+# AI Code Reviewer 
 
 A full-stack AI-powered code review platform built with **FastAPI** + **React 18** + **Google Gemini API**.
 
